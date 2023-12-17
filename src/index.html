@@ -6,20 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Сложно сосредоточиться</title>
     <meta name="color-scheme" content="dark light" />
-    <link rel="stylesheet" href="./fonts/fonts.css" />
+    <!-- <link rel="stylesheet" href="./fonts/fonts.css" /> -->
     <link
       rel="icon"
       href="./images/favicon.ico"
       type="image/x-icon"
       sizes="any"
     />
-    <!-- <link rel="icon" href="./images/favicon.ico" type="image/x-icon"> -->
     <link rel="icon" href="./images/favicon.svg" type="image/svg+xml" />
     <link rel="apple-touch-icon" href="./images/favicon.png" />
-    <link rel="stylesheet" href="/bundle.css" />
     <!-- <link rel="stylesheet" href="./styles/variables.css" />
-    <link rel="stylesheet" href="./styles/globals.css" />
-    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="./src/styles/globals.css" /> -->
+    <link rel="stylesheet" href="bundle.css" />
+    <!-- <link rel="stylesheet" href="./styles/style.css" />
     <link rel="stylesheet" href="./styles/dark.css" />
     <link rel="stylesheet" href="./styles/light.css" /> -->
   </head>
@@ -53,9 +52,8 @@
           </li>
         </ul>
       </nav>
-      <h1 class="page__title shadow-decor">no focus</h1>
-      <!-- <p class="header__text accented-background accented-text accented-text_bold"> -->
-      <p class="header__title title-decor">
+      <h1 class="page__title page__title_header shadow-decor">no focus</h1>
+      <p class="header__subtitle title-decor">
         Что делать, когда не можешь делать ничего <br />
         Или почему нам так сложно сконцентрироваться, особенно когда очень надо
       </p>
@@ -75,7 +73,7 @@
                 вам (и всем нанимающим менеджерам этого мира)? А дело в том, что
                 её просто не существует. Исследователи
                 <a
-                  class="link shadow-decor"
+                  class="link-decor"
                   href="https://dana.org/article/multicosts-of-multitasking/"
                   target="_blank"
                   >выяснили</a
@@ -154,16 +152,17 @@
         </ul>
       </section>
       <section class="section section-how">
-        <h2 class="section__title text-accent">
+        <h2 class="section__title section__title-section-how text-accent">
           Как концентрироваться лучше, чем золотая рыбка (то есть дольше трёх
           секунд)
         </h2>
-        <!-- <div> -->
-        <h3 class="title-decor">5 простых (на самом деле не очень) советов</h3>
-        <ul class="card-list">
+        <h3 class="title-decor title-decor-section-how">
+          5 простых (на самом деле не очень) советов
+        </h3>
+        <ul class="card-list card-list-section-how">
           <li>
             <article class="card-item">
-              <h4 class="card-item__title title-decor">
+              <h4 class="card-item__title title-decor reset-text-bold">
                 Представьте небо и облака
               </h4>
               <p>
@@ -180,7 +179,9 @@
           </li>
           <li>
             <article class="card-item">
-              <h4 class="card-item__title title-decor">Включите музыку</h4>
+              <h4 class="card-item__title title-decor reset-text-bold">
+                Включите музыку
+              </h4>
               <p>
                 Но не любую, и не любимую. Любимая может быть связана с сильными
                 положительными эмоциями, которые тоже очень сильно отвлекают.
@@ -191,11 +192,13 @@
           </li>
           <li>
             <article class="card-item">
-              <h4 class="card-item__title title-decor">Прогуляйтесь</h4>
+              <h4 class="card-item__title title-decor reset-text-bold">
+                Прогуляйтесь
+              </h4>
               <p>
                 Или даже пробегитесь. Лучше найти парк или лес: один эксперимент
                 <a
-                  class="link shadow-decor"
+                  class="link-decor"
                   href="https://www.sciencedirect.com/science/article/abs/pii/S0272494415000328"
                   target="_blank"
                   >показал</a
@@ -210,7 +213,9 @@
           </li>
           <li>
             <article class="card-item">
-              <h4 class="card-item__title title-decor">Хорошо ешьте</h4>
+              <h4 class="card-item__title title-decor reset-text-bold">
+                Хорошо ешьте
+              </h4>
               <p>
                 Мы — не ваша бабушка, но это правда важно. Выбирайте продукты,
                 которые препятствуют резким скачкам сахара в крови. Например, с
@@ -222,7 +227,9 @@
           </li>
           <li>
             <article class="card-item">
-              <h4 class="card-item__title title-decor">Читайте</h4>
+              <h4 class="card-item__title title-decor reset-text-bold">
+                Читайте
+              </h4>
               <p>
                 Настоящие бумажные книги. Это правда помогает с концентрацией:
                 чтобы прочитать пост в соцсети, достаточно нескольких минут или
@@ -232,70 +239,58 @@
             </article>
           </li>
         </ul>
-        <!-- </div> -->
       </section>
-
       <section class="section section-gallery">
-        <h2 class="section__title title-decor">А можно в картинках?</h2>
+        <h2 class="section__title section__title-galery title-decor">
+          А можно в картинках?
+        </h2>
         <ul class="gallery-list">
           <li class="gallery-item">
-            <picture>
-              <img
-                class="gallery-item-img"
-                src="./images/sunset.png"
-                alt="Изображение закакта, отсыдающее к совету представить небо и облака"
-                loading="lazy"
-              />
-            </picture>
+            <img
+              class="gallery-item-img"
+              src="./images/sunset.png"
+              alt="Изображение закакта, отсыдающее к совету представить небо и облака"
+              loading="lazy"
+            />
           </li>
           <li class="gallery-item">
-            <picture>
-              <img
-                class="gallery-item-img"
-                src="./images/ice-cream.png"
-                alt="Изображение тарелки с фруктами и сладостями, отсылающее к совету хорошо есть"
-                loading="lazy"
-              />
-            </picture>
+            <img
+              class="gallery-item-img"
+              src="./images/ice-cream.png"
+              alt="Изображение тарелки с фруктами и сладостями, отсылающее к совету хорошо есть"
+              loading="lazy"
+            />
           </li>
           <li class="gallery-item">
-            <picture>
-              <img
-                class="gallery-item-img"
-                src="./images/tape.png"
-                alt="Изображение магнитофонной кассеты, отсылающее к совету включить музыку"
-                loading="lazy"
-              />
-            </picture>
+            <img
+              class="gallery-item-img"
+              src="./images/tape.png"
+              alt="Изображение магнитофонной кассеты, отсылающее к совету включить музыку"
+              loading="lazy"
+            />
           </li>
           <li class="gallery-item">
-            <picture>
-              <img
-                class="gallery-item-img"
-                src="./images/books.png"
-                alt="Изображение стопки книг, отсылающее к совету читать"
-                loading="lazy"
-              />
-            </picture>
+            <img
+              class="gallery-item-img"
+              src="./images/books.png"
+              alt="Изображение стопки книг, отсылающее к совету читать"
+              loading="lazy"
+            />
           </li>
           <li class="gallery-item">
-            <picture>
-              <img
-                class="gallery-item-img"
-                src="./images/street.png"
-                alt="Изображение улицы между двухэтажных домов, отсылающее к совету прогуляться"
-                loading="lazy"
-              />
-            </picture>
+            <img
+              class="gallery-item-img"
+              src="./images/street.png"
+              alt="Изображение улицы между двухэтажных домов, отсылающее к совету прогуляться"
+              loading="lazy"
+            />
           </li>
         </ul>
       </section>
     </main>
-
     <footer class="footer decorated-zone">
-      <h1 class="page__title shadow-decor">focus</h1>
+      <h2 class="page__title page__title_footer">focus</h2>
     </footer>
-
     <script src="./scripts/script.js"></script>
   </body>
 </html>
