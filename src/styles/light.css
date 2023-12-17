@@ -23,8 +23,6 @@
   --link-condition-borders-color: var(--text-color-main, #353430);
   --link_color_shadow: #ff8dcb;
   --text_color_shadow: var(--link_color_shadow, #ff8dcb);
-
-  
 }
 
 @media (prefers-color-scheme: light) {
@@ -45,13 +43,11 @@
     --link_color_shadow: #ff8dcb;
     --text_color_shadow: var(--link_color_shadow, #ff8dcb);
 
-
     /* @media (width >= 1024px) {
 
       .page {
         --text_color_shadow: #ff0070;
       }
     }         */
-
   }
 }
